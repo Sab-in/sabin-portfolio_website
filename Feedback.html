@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Welcome to my WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form_validation.js"></script>
+
+    <style>
+        .feedback-sub-header {
+
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/books.jpg);
+
+        }
+
+        .feedback-sub-header h2 {
+            color: #ffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 360px;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+
+
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: darkgreen;
+        }
+
+
+        .feedback-form {
+
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;   /* top right bottom left*/
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+
+        }
+
+
+
+        .first-column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+        }
+
+        .second-column {
+            float: left;
+            width: 400px;
+            margin-top: 6px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section class="sub-header feedback-sub-header">
+
+        <nav>
+
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <h1>Feedback</h1>
+    </section>
+
+
+
+
+    <!------Feedback---->
+    <section class="feedback-form">
+        <div>
+
+
+            <form name="messageForm" onsubmit="validate()">
+                <table>
+                    
+
+                    <tr>
+                        <td class="first-column">First Name</td>
+                        <td class="second-column"><input type="text" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Last Name</td>
+                        <td class="second-column"><input type="text" name="last_name"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="first-column">E-mail Address</td>
+                        <td class="second-column"><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Gender</td>
+                        <td class="second-column"><input type="radio" name="gender"> Male
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first-column"> Message: <br> </td>
+                        <td class="second-column"><textarea name="message" name="message" rows="10" cols="30"
+                                placeHolder="write a message for me!"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Send" ></td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!--footer------>
+    <section class="footer">
+        <h2>Contact Me</h2>
+        <div class="icons">
+            <a href="https://www.facebook.com/Sabin.mhrzn"><img src="logo/facebook.png"></a>
+            <a href="mailto: sabinme101@gmail.com"><img src="logo/gmail.png"></a>
+            <a href="https://www.instagram.com/sabin_mhrzn/"><img src="logo/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/sabin-maharjan-7b4978172/"><img src="logo/linkedin.png"></a>
+            <a href="https://wa.me/9860222222"><img src="logo/whatsapp.png"></a>
+        </div> 
+
+
+    </section>
+</body>
+   
+
+
+</html>
